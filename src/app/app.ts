@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { NgStyle } from "./components/ng-style/ng-style";
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [NgStyle],
+  imports: [CommonModule, RouterOutlet, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
